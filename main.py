@@ -50,3 +50,8 @@ if uploaded_file:
     class_idx = np.argmax(pred)
     st.write("### 🧪 Fertilizer Recommendation:")
     st.success(recommend_fertilizer(class_idx))
+
+
+
+
+
