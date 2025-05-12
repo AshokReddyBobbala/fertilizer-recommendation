@@ -39,7 +39,8 @@ def process_image(uploaded_file):
 
 # Streamlit UI
 st.title("🌱 Fertilizer Recommendation System")
-uploaded_file = st.file_uploader("Upload a plant leaf image...", type=["jpg", "png", "jpeg"])
+uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png", "JPG", "JPEG", "PNG"])
+
 
 if uploaded_file:
     st.image(uploaded_file, caption="Uploaded Leaf Image", use_column_width=True)
